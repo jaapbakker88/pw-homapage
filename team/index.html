@@ -1,0 +1,714 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="A free app that connects people that want to party.">
+  <meta name="keywords" content="Party, Meet new people, Nightlife, Meetup, App, Amsterdam, New York, Sao Paulo, Local, bars, clubs">
+  <meta name="author" content="Party with a Local">
+  <meta name="apple-itunes-app" content="app-id=562560874">
+  <meta name="google-play-app" content="app-id=com.pwal">
+  <meta name="msApplication-ID" content="App" />
+  <meta name="msApplication-TileImage" content="static/images/apple-touch-icon-72x72.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:title" content="Party with a Local"/>
+  <meta property="og:url" content="http://partywithalocal.com"/>
+  <meta property="og:image" content="https://www.dropbox.com/s/xcgwz6uil8o3waw/iOS-Icon.png?dl=1"/>
+  <meta property="og:site_name" content="Party with A Local"/>
+  <meta property="og:description"
+  content="A free app that connects people that want to party."/>
+
+
+
+  <!-- SITE TITLE -->
+  <title>Party with a Local</title>
+
+  <!-- =========================
+  FAV AND TOUCH ICONS
+  ============================== -->
+  <link rel="icon" href="static/images/favicon.ico">
+  <link rel="apple-touch-icon" href="static/images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="static/images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="static/images/apple-touch-icon-114x114.png">
+
+  <!-- =========================
+  STYLESHEETS
+  ============================== -->
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+
+  <!-- FONT ICONS -->
+  <link rel="stylesheet" href="static/assets/elegant-icons/style.css">
+  <!-- <link rel="stylesheet" href="static/assets/app-icons/styles.css">
+-->
+<link rel="stylesheet" href="static/assets/font-awesome/css/font-awesome.css">
+<!--[if lte IE 7]><script src="lte-ie7.js"></script><![endif]-->
+
+<!-- WEB FONTS -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' rel='stylesheet' type='text/css'>
+
+<!-- CAROUSEL AND LIGHTBOX -->
+<link rel="stylesheet" href="static/css/owl.theme.css">
+
+<link rel="stylesheet" href="static/css/owl.carousel.css">
+<link rel="stylesheet" href="static/css/nivo-lightbox.css">
+
+<link rel="stylesheet" href="static/css/nivo_themes/default/default.css">
+
+<!-- ANIMATIONS -->
+<link rel="stylesheet" href="static/css/animate.min.css">
+
+<!-- CUSTOM STYLESHEETS -->
+<link rel="stylesheet" href="static/css/styles.css">
+
+<!-- COLORS -->
+<link rel="stylesheet" href="static/css/colors/blue.css"> <!-- DEFAULT COLOR/ CURRENTLY USING -->
+
+<!-- RESPONSIVE FIXES -->
+<link rel="stylesheet" href="static/css/responsive.css">
+
+<link rel="stylesheet" type="text/css" href="static/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="static/slick/slick-theme.css"/>
+
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+  <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+ fbq('init', '1831325640466359'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+ <img height="1" width="1" 
+src="https://www.facebook.com/tr?id=1831325640466359&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+
+</head>
+
+<body>
+  <!-- =========================
+  PRE LOADER
+  ============================== -->
+  <!-- <div class="preloader">
+    <div class="status">&nbsp;</div>
+  </div> -->
+
+
+  <!-- =========================
+  HEADER
+  ============================== -->
+  <header class="header" id="home">
+
+      <div class="navbar-inverse bs-docs-nav navbar-fixed-top sticky-navigation">
+        <div class="container">
+          <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle hidden-xs" data-toggle="collapse" data-target="#pwal-navigation">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <a href="#"><img src="static/images/new-logo.png" alt="" class="logoSticky"></a>
+
+          </div>
+
+          <div class="navbar-collapse collapse hidden-xs" id="pwal-navigation">
+            <ul class="nav navbar-nav navbar-right main-navigation">
+              <li><a href="http://partywithalocal.com">Home</a></li>
+              <li><a href="http://partywithalocal.com/#about">About</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="http://blog.partywithalocal.com" target="_blank">Blog</a></li>
+              <li><a href="https://www.facebook.com/PartywithaLocal/events" target="_blank">Events</a></li>
+              <li><a href="http://partywithalocal.com/#download">Download</a></li>
+              <li><a href="http://partywithalocal.com/#contact">Contact</a></li>
+              <li><a href="https://facebook.com/partywithalocal" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://instagram.com/partywithalocal" target="_blank"><i class="fa fa-instagram"></i></a></li>
+              <!-- <li><div id="widget" class="localizationTool"></div>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+  </header>
+
+
+  <section class="services" id="services">
+
+    <div class="container">
+
+      <!-- SECTION HEADER -->
+      <div class="section-header wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+        <!-- SECTION TITLE -->
+        <h2 class="white-text">Team</h2>
+
+        <div class="colored-line">
+        </div>
+        <div class="section-description">
+          “We love technology, meeting new people and partying.”
+        </div>
+        <div class="colored-line">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+
+    <div class="video-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/AgvTi4zbU7o?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <section class="services" id="services">
+
+    <div class="container">
+
+      <!-- FIRST ROW EMPLOYEEESS                     -->
+      <div class="row">
+
+        <!-- DAN FENNESSY -->
+        <div class="col-md-2 col-xs-12 col-md-offset-1 employee single-service wow fadeIn animated " data-wow-offset="10" data-wow-duration="1.5s">
+
+          <!-- SERVICE ICON -->
+          <div class="service-icon">
+            <!-- <img src="/static/images/teamphoto/dan250.png" alt="Dan Fenessy" class="teamImages" > -->
+            <img src="static/images/teamphoto/dan1.jpg" alt="Dan Fenessy" class="teamImages" onmouseover="this.src='static/images/teamphoto/dan2.jpg'" onmouseout="this.src='static/images/teamphoto/dan1.jpg'" />
+          </div>
+
+          <!-- SERVICE HEADING -->
+          <h3>DAN <small class="btn btn-primary btn-xs">Founder</small></h3>
+
+          <!-- SERVICE DESCRIPTION -->
+
+          <p>
+            From Australia, traveled the world, and settled Amsterdam (for a girl). Our Founder loves  his family, discovering new places, ping pong and is passionate about building a truly global community with Party with a Local.
+          </p>
+
+          <p class="social-links">
+            <a href="https://nl.linkedin.com/in/danielfennessy" target="_blank"><i class="fa fa-linkedin"></i> </a>
+            <a href="https://medium.com/@Dan_Fennessy" target="_blank"><i class="fa fa-medium"></i> </a>
+            <a href="https://twitter.com/dan_fennessy" target="_blank"><i class="fa fa-twitter"></i></a>
+
+          </p>
+
+        </div>
+        <!-- /END DAN FENNESSY -->
+
+        <div class="col-md-2 col-xs-12 employee single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+          <!-- SERVICE ICON -->
+          <div class="service-icon">
+            <img src="static/images/teamphoto/tendelle1.jpg" alt="Tendelle Sheu" class="teamImages" onmouseover="this.src='static/images/teamphoto/tendelle2.jpg'" onmouseout="this.src='static/images/teamphoto/tendelle1.jpg'" />
+          </div>
+
+          <!-- SERVICE HEADING -->
+          <h3>TENDELLE <small class="btn btn-primary btn-xs">Product</small></h3>
+
+          <!-- SERVICE DESCRIPTION -->
+
+          <p>
+            Management consultant in NYC turned globetrotting electronic dance music aficionado. She counts on Party with a Local to encounter new dancing buddies during her travels to so her #1 goal is to make the app grow!
+          </p>
+
+          <p class="social-links">
+            <a href="https://es.linkedin.com/in/tendelle" target="_blank"><i class="fa fa-linkedin"></i> </a>
+            <a href="https://instagram.com/tendelle/" target="_blank"><i class="fa fa-instagram"></i> </a>
+            <a href="http://travelalatendelle.com/" target="_blank"><i class="fa fa-pencil"></i></a>
+          </p>
+        </div>
+
+
+        <div class="col-md-2 col-xs-12 employee single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+          <!-- SERVICE ICON -->
+          <div class="service-icon">
+            <img src="static/images/teamphoto/jaideep1.jpg" alt="Jaideep Khandelwal" class="teamImages" onmouseover="this.src='static/images/teamphoto/jaideep2.jpg'" onmouseout="this.src='static/images/teamphoto/jaideep1.jpg'" />
+          </div>
+
+          <!-- SERVICE HEADING -->
+          <h3>JAIDEEP <small class="btn btn-primary btn-xs">Development</small></h3>
+
+          <!-- SERVICE DESCRIPTION -->
+
+          <p>
+            From India and transplanted to Amsterdam for study (Masters of Computer Science). Our Lead Developer loves meeting new people, coffee, beer and building scalable products (on his way to becoming a ‘Brogrammer’ :-P).
+          </p>
+
+          <p class="social-links">
+            <a href="http://github.com/jdk2588" target="_blank"><i class="fa fa-github"></i> </a>
+            <a href="http://twitter.com/jdk2588" target="_blank"><i class="fa fa-twitter"></i></a>
+          </p>
+
+
+        </div>
+
+        <!-- 6 -->
+
+
+        <!-- 7 -->
+        <div class="col-md-2 col-xs-12 employee single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+          <!-- SERVICE ICON -->
+          <div class="service-icon">
+            <img src="static/images/teamphoto/jaap1.jpg" alt="Jaap Bakker" class="teamImages" onmouseover="this.src='static/images/teamphoto/jaap2.jpg'" onmouseout="this.src='static/images/teamphoto/jaap1.jpg'" />
+          </div>
+
+          <!-- SERVICE HEADING -->
+          <h3>JAAP <small class="btn btn-primary btn-xs">Design</small></h3>
+
+          <!-- SERVICE DESCRIPTION -->
+
+          <p>
+            As Dutch as can be, Jaap grew up in the Netherlands. As soon as he could, our designer moved away from his parents to settle in Amsterdam. He likes to party, and enjoys museums, dance, and art. But most of all, he likes partying and dancing!
+          </p>
+
+          <p class="social-links">
+            <a href="https://twitter.com/jaapbakker/" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://instagram.com/jpbkkr/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://nl.linkedin.com/in/jaapbakker88" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://bakkerlabs.nl" target="_blank"><i class="fa fa-paperclip"></i></a>
+          </p>
+        </div>
+        <!-- 8 -->
+        <div class="col-md-2 col-xs-12 employee single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+          <!-- SERVICE ICON -->
+          <div class="service-icon">
+            <img src="static/images/teamphoto/felipe1.jpg" alt="Felipe" class="teamImages" onmouseover="this.src='static/images/teamphoto/felipe2.jpg'" onmouseout="this.src='static/images/teamphoto/felipe1.jpg'" />
+          </div>
+
+          <!-- SERVICE HEADING -->
+          <h3>FELIPE <small class="btn btn-primary btn-xs">Development</small></h3>
+
+          <!-- SERVICE DESCRIPTION -->
+
+          <p>
+            Based in the greenest city of Brazil and raised by Italians, Felipe is addicted to surf music, coding for mobile, travel and the Dutch “gezelligheid” atmosphere. He spends most of his time making sure that you get a great experience using the Party with a local app.
+          </p>
+
+          <p class="social-links">
+            <a href="https://github.com/felipericieri" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://www.instagram.com/felipericieri/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/felipericieri" target="_blank"><i class="fa fa-linkedin"></i></a>
+          </p>
+        </div>
+      </div>
+
+
+      <div class="section-header wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+        <!-- SECTION TITLE -->
+        <h2 class="white-text">Advisors</h2>
+
+        <div class="colored-line">
+        </div>
+        <div class="section-description">
+          Those who support and advise Party with a Local.
+        </div>
+        <div class="colored-line">
+        </div>
+
+      </div>
+
+      <div class="row">
+        <!-- 5 -->
+        <!-- LYLE FONG -->
+        <div class="col-md-2 col-xs-12 employee col-md-offset-2 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+          <!-- SERVICE ICON -->
+          <div class="service-icon">
+            <img src="static/images/teamphoto/lylefong.jpg" alt="Lyle Fong" class="mentorImages" />
+          </div>
+
+          <!-- SERVICE HEADING -->
+          <h3>Lyle Fong</h3>
+
+          <!-- SERVICE DESCRIPTION -->
+
+          <p>
+            Co-Founder of Hobo Labs, Lithium, Gamers.com. Currently CEO at Hobo Labs.
+          </p>
+
+          <p class="social-links">
+            <a href="https://www.linkedin.com/in/lylefong" target="_blank"><i class="fa fa-linkedin"></i></a>
+          </p>
+
+        </div>
+        <!-- 7  BINH TRAN  -->
+        <div class="col-md-2 col-xs-12 employee single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+          <!-- SERVICE ICON -->
+          <div class="service-icon">
+            <img src="static/images/teamphoto/dantaneja.jpg" alt="Binh Tran" class="mentorImages" />
+          </div>
+
+          <!-- SERVICE HEADING -->
+          <h3>Dan Taneja</h3>
+
+          <!-- SERVICE DESCRIPTION -->
+
+          <p>
+            Founder BevAnalytics, fmr. Bacardi, Diageo.
+          </p>
+
+          <p class="social-links">
+            <a href="https://www.linkedin.com/in/dantaneja/" target="_blank"><i class="fa fa-linkedin"></i></a>
+          </p>
+        </div>
+        <!-- 6 SANDRA SICK -->
+        <div class="col-md-2 col-xs-12 employee single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+          <!-- SERVICE ICON -->
+          <div class="service-icon">
+            <img src="static/images/teamphoto/geoffreyisenman.jpg" alt="Sandra Sick" class="mentorImages"  />
+          </div>
+
+          <!-- SERVICE HEADING -->
+          <h3>Geoff Isenman</h3>
+
+          <!-- SERVICE DESCRIPTION -->
+
+          <p>
+            Tech & Media Consultant, fmr. New York Times
+          </p>
+
+          <p class="social-links">
+            <a href="https://www.linkedin.com/in/geoffreyisenman/" target="_blank"><i class="fa fa-linkedin"></i></a>
+          </p>
+        </div>
+
+        
+
+        <!-- 6 PAUL MORENO -->
+        <div class="col-md-2 col-xs-12 employee single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+          <!-- SERVICE ICON -->
+          <div class="service-icon">
+            <img src="static/images/teamphoto/paulmoreno.jpg" alt="Paul Moreno" class="mentorImages"  />
+          </div>
+
+          <!-- SERVICE HEADING -->
+          <h3>Paul Moreno</h3>
+
+          <!-- SERVICE DESCRIPTION -->
+
+          <p>
+            EMEA Security Engineering Lead at Uber, Burner 13 years straight, recent mover to Amsterdam and avid user of Party with a Local.
+          </p>
+
+          <p class="social-links">
+            <a href="https://www.linkedin.com/in/unic0rn" target="_blank"><i class="fa fa-linkedin"></i></a>
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    
+
+
+
+    <!-- =========================
+    FOOTER
+    ============================== -->
+    <footer id="contact">
+
+      <div class="container">
+
+
+        <!-- LOGO -->
+
+        <img src="static/images/logo-square-blue.png" alt="LOGO" >
+        <br>
+        <br>
+
+  <!-- SOCIAL ICONS -->
+  <ul class="social-icons">
+    <li><a href="https://www.facebook.com/PartywithaLocal" target="_blank"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="https://twitter.com/PartywithaLocal" target="_blank"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="http://instagram.com/partywithalocal" target="_blank"><i class="fa fa-instagram"></i></a></li>
+    <li><a href="https://angel.co/party-with-a-local" target="_blank"><i class="fa fa-angellist"></i></a></li>
+  </ul>
+
+  <a href="https://mixpanel.com/f/partner"><img src="http://cdn.mxpnl.com/site_media/images/partner/badge_light.png" alt="Mobile Analytics" /></a>
+
+  <!-- COPYRIGHT TEXT -->
+  <p class="copyright">
+    ©2017 Party with a Local, All Rights Reserved |
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#terms">
+      Terms
+    </button>
+    &
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#privacy">
+      Privacy
+    </button>
+  </p>
+
+  <!-- Modal Terms -->
+  <div class="modal fade" id="terms" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="termsTitle" style="text-align:left; ">Terms and Conditions of Use</h4>
+        </div>
+        <div class="modal-body">
+          <p>Party with a Local (hereinafter referred to as: “PWAL”) is a free app that connects travellers and locals that want to party. It’s mission is to bring people together to have a great time. The following Terms and Conditions apply to the use of PWAL’s services. Please read them carefully. These Terms and Conditions of Use will also be available on the website in PDF format to enable User to read them at a later stage if so desired.</p>
+
+          1. Identification
+          <ul class="listDefault"><li>Party with a Local (hereinafter referred to as: “PWAL”) is a free app that connects travellers and locals that want to party. It’s mission is to bring people together to have a great time. The following Terms and Conditions apply to the use of PWAL’s services. Please read them carefully. These Terms and Conditions of Use will also be available on the website in PDF format to enable User to read them at a later stage if so desired.</li></ul>
+
+          2. Service
+          <ul class="listDefault"><li>PWAL is an app developed as a service for you, the User. The service is designed to pair locals and visiting travellers so they can enjoy the nightlife together, or to find a nearby venue where the nightlife can be enjoyed. The app has not been developed for any other purpose.</li>
+            <li>PWAL app enables Users to learn about each other and, if desired to meet. PWAL is not involved in the actual contact between Users.</li></ul>
+
+            3. Applicability
+            <ul class="listDefault"><li>Each time the PWAL app is used, User agrees to comply with and is legally bound by PWAL’s Terms and Conditions of Use.</li></ul>
+
+            4. User responsibility
+            <ul class="listDefault"><li>PWAL is not involved in the contact between Users in any way whatsoever. As a result PWAL does not have any control over the conduct of Users, nor over the information published on the app.</li>
+
+              <li>PWAL does not conduct an identity or background check on Users.</li>
+
+              <li>Users must take utmost care when providing others with their contact details or other privacy-sensitive information and should meet in safe places, such as a public areas or busy bars.</li>
+
+              <li>User is solely responsible for all interaction with other Users. PWAL cannot be held liable any damage or harm resulting from interaction with other PWAL Users.</li>
+
+              <li>User is solely responsible for all contacts submitted, posted or transmitted via our services.</li></ul>
+
+              5. User conduct
+              <ul class="listDefault"><li>Minors may not use PWAL. Users must at least be 18 years old to register. User hereby warrants that he/she is 18 years or older.</li>
+
+                <li>When using PWAL, User must act responsibly and exercise good judgment. This means, among other things, that User may not:
+                  <ul class="listDefault-2lv">
+                    <li>violate any applicable law or regulation;
+
+                      <li>infringe the rights of any third party, including but not limited to, intellectual property, privacy, publicity or contractual rights;
+
+                        <li>“stalk” or harass other PWAL Users, which includes using PWAL to distribute spam;
+
+                          <li>use PWAL for any commercial purpose whatsoever;
+
+                            <li>impersonate any person or entity, or falsify or otherwise misrepresent yourself or your association with any person or entity, whether by providing or omitting to provide information;
+
+                              <li>interfere or damage PWAL app/service by, inter alia, the use of viruses, cancel bots, Trojan horses, harmful codes, flood pings, denial-of-service attacks or similar methods or technology.
+
+                                <li>User may not post or submit any content that:
+                                  <ul class="listDefault-3lv">
+                                    <li>is defamatory;</li>
+                                    <li>contains nudity or sexually explicit content;</li>
+                                    <li>disparages any ethic, racial, sexual or religious group by stereotypical portrayal or otherwise;</li>
+                                    <li>makes use of offensive language or images;</li>
+                                    <li>provides a link to a commercial website.</li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li></ul>
+
+                            6. Complaints procedure
+                            <ul class="listDefault"><li>All complaints about, among others, the services, behaviour or misconduct of other Users, may be reported either via the 'Give Feedback' button in the ‘More’ section of the app or via an e-mail addressed to PWAL at <a href="mailto:info@partywithalocal.com">info@partywithalocal.com</a>. When submitting complaint, as much detail as possible must be provided. All complaints will be dealt with professionally and confidentially, and will be given personal attention.</li>
+
+                              <li>Reporting the misconduct of another User will not imply an obligation on PWAL’s part to take action, neither can PWAL be held liable in any way for user misconduct.</li></ul>
+
+                              7. Intellectual property
+                              <ul class="listDefault"><li>All PWAL material is protected by intellectual property rights, which rights include copyrights, rights of publicity, trademarks, trade secrets, and any other proprietary rights and laws that may be applicable. Except as expressly authorised by PWAL, User may not sell, license, rent, modify, distribute, copy, reproduce, transmit, publicly perform, publish, adapt, edit or create derivative works from such material. Notwithstanding the foregoing, User may use such material in the course of his/her normal, personal, non-commercial use of PWAL’s services.</li>
+
+                                <li>By submitting content to PWAL, User grants PWAL a non-exclusive, royalty-free licence to use, reproduce, display, perform, adapt, modify, distribute and promote such content in any form, in all media now known or hereinafter created, and for any purpose.</li></ul>
+
+                                8. Liability and Warranties
+                                <ul class="listDefault"><li>User hereby warrants that his/her use of PWAL will not infringe the intellectual property rights of others. User indemnifies PWAL against any such infringement of intellectual property rights.</li>
+
+                                  <li>PWAL cannot be held liable for damages of any kind, including but not limited to direct or indirect damages, such as incidental, general, special, and consequential damages.</li>
+
+                                  <li>If the laws in User’s jurisdiction do not allow full exclusion of liability, liability will be capped at an amount of € 5,000.</li>
+
+                                  <li>User will indemnify PWAL against all liability, loss, damages, costs and expenses (including but not limited to legal expenses) suffered or incurred by User as a result of, or in connection with, a breach by User of any of the warranties or other obligations set out in these Terms and Conditions of Use or applicable by law.</li></ul>
+
+                                  9. Termination
+                                  <ul class="listDefault"><li>The contract entered into between PWAL and User will be for an indefinite period of time.</li>
+
+                                    <li>Both contract parties will, at all times, be entitled to terminate the contract in writing or in the manner used for conclusion of the contract.</li>
+
+                                    <li>Should User fail to fulfil his or her obligations under the contract or violate these Terms and Conditions of Use, PWAL may, at its sole and absolute discretion:
+                                      <ul class="listDefault-2lv">
+                                        <li>suspend User’s access to PWAL;</li>
+                                        <li>terminate User’s access to PWAL;</li>
+                                        <li>deactivate or delete any or all of User’s accounts and all related information and files in such account.</li>
+                                      </ul>
+                                    </li></ul>
+
+                                    10. Discontinuance of services
+                                    <ul class="listDefault"><li>PWAL may, at its sole and absolute discretion and without being liable to User in any way, with or without prior notice, modify or discontinue, temporarily or permanently, all or part of its services.</li>
+
+                                      <li>PWAL’s services are provided on an 'as is' and 'as available' basis;</li>
+
+                                      <li>PWAL does not warrant that:
+                                        <ul class="listDefault-2lv">
+                                          <li>its services meet User’s requirements;</li>
+                                          <li>its services will be uninterrupted;</li>
+                                          <li>any errors in any data or software will be corrected.</li>
+                                        </ul>
+                                      </li></ul>
+
+                                      11. Privacy
+                                      <ul class="listDefault"><li>User privacy is very important to PWAL. User must ensure that he/she reads PWAL’s privacy statement.</li></ul>
+
+                                      12. Dispute settlement rules
+                                      <ul class="listDefault"><li>All contracts between PWAL and User will be governed by the laws of the Netherlands.</li>
+
+                                        <li>All disputes arising between PWAL and User will be settled exclusively by the District Court of Amsterdam. PWAL, however, remains entitled to summon User to appear before the competent court of User’s place of residence.</li>
+
+                                        <li>Parties will only bring proceedings before the Court after they have done their utmost to settle the dispute amicably.</li></ul>
+
+                                        13. Amendment of these Terms and Conditions of Use
+                                        <ul class="listDefault"><li>PWAL is entitled to always amend these Terms and Conditions. Amendments will take effect on the date of entry into force notified.</li>
+
+                                          <li>PWAL will send the amended Terms and Conditions to User in good time. If no date of entry into force has been notified, these amendments will govern all dealings with User with effect from the time that User is notified of the amendment.</li></ul>
+
+                                          14. Miscellaneous
+                                          <ul class="listDefault"><li>If any of the provisions of these General Terms and Conditions of Use are partially or wholly null and void or are voided at any time, the other provisions of these General Terms and Conditions of Use will retain their full force and effect. PWAL and User will then consult with each other to agree new provisions to replace the void or voided provisions. In doing so, the purpose and meaning of the original provisions will be taken into account as much as possible.</li>
+
+                                            <li>Should a situation arise between the parties that is not regulated under these General Terms and Conditions of Use, such situation must be assessed in accordance with the purpose and meaning of these General Terms and Conditions of Use.</li></ul>
+                                          </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
+
+                                    <!-- Modal Terms -->
+                                    <div class="modal fade" id="privacy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                      <div class="modal-dialog">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <h4 class="modal-title" id="privacyTitle" style="text-align:left; ">Privacy Policy PWAL</h4>
+                                          </div>
+                                          <div class="modal-body">
+                                            <p>Party with a Local (hereinafter referred to as: PWAL) respects the privacy of its Users. Please read the following privacy statement to understand how we use and protect the information you provide to us online.</p>
+
+                                            <h4>What information do we collect?</h4>
+                                            <p>When you use the PWAL app you will be asked to provide certain information about yourself including your name, birthday, age, email address, gender, Facebook ID, number of friends on Facebook hometown as well as your current location (this is something that the app reports back to the server directly). This information will hereinafter be referred to as Personal Information. By providing us with this information, you are giving us permission to use it as described in this Privacy Policy.</p>
+
+                                            <p>We will never share your information with third parties without first receiving your explicit consent to do so.</p>
+
+                                            <p>When you log on to the PWAL app, you do so via Facebook or with Email. How does that work? PWAL uses the Facebook platform to register new accounts, which accounts enable Users to log on to the PWAL app.</p>
+
+                                            <p>When you log on via Facebook, Facebook provides us with the information you have given them. The information we collect and access are your name, email account, gender, birthday, current city/hometown and number of friends on Facebook. By signing up with PWAL through the Facebook platform, you grant us permission to use the information listed in your Facebook profile.</p>
+
+                                            <p>Please note that all information gathered by Facebook is governed by their privacy policy. <a href="https://www.facebook.com/help/privacy">Please click here to read Facebook’s registration and privacy policy</a>.</p>
+
+                                            <h4>Information you share and information that is private</h4>
+                                            <p>We will not publish all the information you give us. We will use your name, age, photo, current city/hometown, and number of friends on Facebook, to set up your profile. We will never share your precise GPS location, email address, Facebook ID and last login time with other users. You may, if you wish, place more information on the PWAL app itself. It is important for you to know that we have no control over the information you share with other Users, and you, as User must take great care when providing others with your contact details or other privacy-sensitive information. PWAL can never be held liable or responsible for the information you share with others.</p>
+
+                                            <h4>Non-identifiable information</h4>
+                                            <p>When you visit the PWAL website, you provide us with non-Identifiable information. PWAL stores general visitor data (statistics), such as, the most frequently visited screens, the total number of visitors and how visitors interact with the services/website. This information will not be used to identify you.</p>
+                                            <p>We use cookies to analyze the information stored when you visit our website. A cookie is a small file stored on the hard disk of a computer. If you do not want to receive cookies, you may reject them by adjusting your browser settings. Without certain cookies, some parts of the PWAL site may not work.</p>
+
+                                            <h4>Location</h4>
+                                            <p>Our PWAL app helps you find nearby Users and Venues. To do this we use the GPS coordinates on your mobile device and/ or the information on your hometown and current location as given in your Facebook profile. This information does not necessarily state your actual precise location or that of other users. Other Users might be right next to you, or miles away. You may edit the information about the location in the PWAL settings and/or Facebook profile settings.</p>
+                                            <p>We use your GPS coordinates to determine your approximate current location. Other Users will never see your exact location. When you install the PWAL app, you grant us permission to use your GPS coordinates. You may revoke this permission by adjusting the PWAL app setting (disable GPS is possible within the Settings section of the More screen within the app).</p>
+                                            <p>Your GPS coordinates are safe with us. The app sends your GPS coordinates to the server at regular intervals and each time it overwrites the previous GPS coordinates. The GPS location is securely stored in our database and is not accessible to anyone. We will never keep a record of your coordinates and never share your GPS location with anyone.</p>
+
+                                            <h4>How do we use the information you give us?</h4>
+                                            <p>We use your Personal Information:</p>
+                                            <ul class="listDefault">
+                                              <li>to enable Users to see other users nearby, to view their profiles and to recommend nearby bars;</li>
+                                              <li>to send, among other things, e-mail notifications on service announcements and administrative messages;</li>
+                                              <li>to measure interest in our services (statistics), and to make our website and the PWAL app more user-friendly;</li>
+                                              <li>to improve the design of the website platform, so enabling PWAL to optimize its services;</li>
+                                              <li>to inform you, if you have provided us with your contact details for this purpose or you are a regular client, of interesting offers regarding PWAL, our services, and for other direct marketing purposes;</li>
+                                              <li>for other purposes, as specifically described when your data is collected;</li>
+                                              <li>to respond to legal requests, such as court orders, and to prevent harm.</li>
+                                            </ul>
+
+                                            <h4>Steps we take to protect your information</h4>
+                                            <p>Personal data that you provide via the website or the app to create a profile, submit or respond to a request, will be carefully processed and secured. PWAL will always ensure that appropriate technical and organizational measures are taken to prevent: the loss of your personal data, unauthorized access to your personal data, and to combat any unlawful processing of your personal data.</p>
+
+                                            <h4>Your rights</h4>
+                                            <p>You may change or remove your profile information at any time by logging on to the PWAL app to make changes and/or Facebook profile page and adjusting the settings to delete your profile. You may also ask to view the data PWAL collects about you at any time, or arrange for the data to be changed or removed. To do this, please send an e-mail with your name and address to the help desk at <a href="mailto:info@partywithalocal.com">info@partywithalocal.com</a>. PWAL retains the right to ask for your identification before taking your request into consideration. You may also object to your data being used for direct marketing purposes at any time. To do this, please use the link in the direct mailings to opt-out of direct mailing campaigns.</p>
+
+                                            <h4>Identification</h4>
+                                            <p>Party with a Local is owned, hosted and maintained by Party with a Local B.V., which company is established at Vespuccistraat 106-HS, 1056 SR, Amsterdam, and registered at the Amsterdam Chamber of Commerce under number 63141965.</p>
+
+                                            <h4>Information</h4>
+                                            <p>If you have any questions about this privacy statement, please contact us at <a href="mailto:info@partywithalocal.nl">info@partywithalocal.nl</a>.</p>
+
+                                            <h4>Changes</h4>
+                                            <p>PWAL reserves the right to make changes to this privacy statement. Changes or additions to the privacy statement will be published on the website and the PWAL app, and take effect immediately after publication.</p>
+
+                                            <h4>Effective date</h4>
+                                            <p>The privacy statement was last revised on October 21, 2015.</p>
+                                          </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
+
+                                    <p id="made-with"><small>Made with <i class="fa fa-heart" style="color: red;"></i> and <i class="fa fa-beer"></i> in Amsterdam.</small></p>
+
+
+                                  </div>
+                                  <!-- /END CONTAINER -->
+
+                                </footer>
+                                <!-- /END FOOTER -->
+
+
+
+
+
+                                <!-- =========================
+                                SCRIPTS
+                                ============================== -->
+                                <!-- JQUERY -->
+                                <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+                                <script src="static/js/bootstrap.min.js"></script>
+                                <script src="static/js/wow.min.js"></script>
+                                <script type="text/javascript" src="static/js/instafeed.js"></script>
+                                <script type="text/javascript" src="static/slick/slick.min.js"></script>
+                                <script type="text/javascript" src="static/js/feed.js"></script>
+                                <script src="static/js/custom-team.js"></script>
+
+                                <script>
+                                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                                  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+                                  ga('create', 'UA-25366523-2', 'auto');
+                                  ga('send', 'pageview');
+
+
+
+                                </script>
+
+                              </body>
+                              </html>
