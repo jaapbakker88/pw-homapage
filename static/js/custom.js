@@ -372,18 +372,18 @@ setInterval('cycleImages()', 4500);
 === Custom Tomorrowland stuff   ====
 ==================================*/
 
-$(document).ready(function () {
-  if(window.location.href.indexOf("tml") > -1) {
-    document.querySelector(".tml-1").textContent = "Party with a Local is a free app that connects people who love to party - for Tomorrowland events near you";
-    document.querySelector(".tml-2").textContent = "The purpose of the app is exactly what it sounds like: to connect users for a night out...";
-    document.querySelector(".tml-3").textContent = "Want to go to Tomorrowland parties but lacking a killer party crew?";
-    document.querySelector(".tml-4").innerHTML = "From EDM heads to techno snobs…<br>everyone can join the party!";
+// $(document).ready(function () {
+//   if(window.location.href.indexOf("tml") > -1) {
+//     document.querySelector(".tml-1").textContent = "Party with a Local is a free app that connects people who love to party - for Tomorrowland events near you";
+//     document.querySelector(".tml-2").textContent = "The purpose of the app is exactly what it sounds like: to connect users for a night out...";
+//     document.querySelector(".tml-3").textContent = "Want to go to Tomorrowland parties but lacking a killer party crew?";
+//     document.querySelector(".tml-4").innerHTML = "From EDM heads to techno snobs…<br>everyone can join the party!";
 
-    // $('.tml-1').textContent = 'Party with a Local is a free app that connects people who love to party - for Tomorrowland events near you';
-    // $('.tml-2').textContent = 'The purpose of the app is exactly what it sounds like: to connect users for a night out...';
-    // $('.tml-3').textContent = 'Want to go to Tomorrowland parties but lacking a killer party crew?';
-    // $('.tml-4').innerHtml = 'From EDM heads to techno snobs…<br>everyone can join the party!';
-    $('.tml-5').hide();
-    $('.tml-6').hide();
-  }
-});
+//     // $('.tml-1').textContent = 'Party with a Local is a free app that connects people who love to party - for Tomorrowland events near you';
+//     // $('.tml-2').textContent = 'The purpose of the app is exactly what it sounds like: to connect users for a night out...';
+//     // $('.tml-3').textContent = 'Want to go to Tomorrowland parties but lacking a killer party crew?';
+//     // $('.tml-4').innerHtml = 'From EDM heads to techno snobs…<br>everyone can join the party!';
+//     $('.tml-5').hide();
+//     $('.tml-6').hide();
+//   }
+// });
