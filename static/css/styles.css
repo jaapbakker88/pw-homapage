@@ -1299,3 +1299,16 @@ footer ul li a:hover {
     display: initial ;
   }
 }
+
+.pwbanner {
+    background: #30baed;
+    margin-top: 60px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    color: #fff;
+    font-size: 1.2em;
+}
