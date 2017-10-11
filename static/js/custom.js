@@ -296,7 +296,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 
 $(document).ready(function(){
   $('.as-seen-on').slick({
-		slidesToShow: 7,
+		slidesToShow: 6,
 	  slidesToScroll: 1,
 	  autoplay: false,
 	  autoplaySpeed: 4000,
