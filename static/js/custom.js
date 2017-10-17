@@ -221,44 +221,6 @@ $("#subscribe").submit(function (e) {
 });
 
 
-
-// /* =================================
-// ===  CONTACT FORM          ====
-// =================================== */
-// $("#contact").submit(function (e) {
-//     e.preventDefault();
-//     var name = $("#name").val();
-//     var email = $("#email").val();
-//     var subject = $("#subject").val();
-//     var message = $("#message").val();
-//     var dataString = 'name=' + name + '&email=' + email + '&subject=' + subject + '&message=' + message;
-
-//     function isValidEmail(emailAddress) {
-//         var pattern = new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
-//         return pattern.test(emailAddress);
-//     };
-
-//     if (isValidEmail(email) && (message.length > 1) && (name.length > 1)) {
-//         $.ajax({
-//             type: "POST",
-//             url: "/contact-form",
-//             data: dataString,
-//             success: function () {
-//                 $('.success').fadeIn(1000);
-//                 $('.error').fadeOut(500);
-//             }
-//         });
-//     } else {
-//         $('.error').fadeIn(10);
-//         $('.success').fadeOut(500);
-//     }
-
-//     return false;
-// });
-
-
-
-
 /* =================================
 ===  EXPAND COLLAPSE            ====
 =================================== */
@@ -367,28 +329,6 @@ setInterval('cycleImages()', 4500);
     },
     false
   );
-
-/*==================================
-=== Custom Tomorrowland stuff   ====
-==================================*/
-
-// $(document).ready(function () {
-//   if(window.location.href.indexOf("tml") > -1) {
-//     document.querySelector(".tml-1").textContent = "Party with a Local is a free app that connects people who love to party - for Tomorrowland events near you";
-//     document.querySelector(".tml-2").textContent = "The purpose of the app is exactly what it sounds like: to connect users for a night out...";
-//     document.querySelector(".tml-3").textContent = "Want to go to Tomorrowland parties but lacking a killer party crew?";
-//     document.querySelector(".tml-4").innerHTML = "From EDM heads to techno snobs…<br>everyone can join the party!";
-
-//     // $('.tml-1').textContent = 'Party with a Local is a free app that connects people who love to party - for Tomorrowland events near you';
-//     // $('.tml-2').textContent = 'The purpose of the app is exactly what it sounds like: to connect users for a night out...';
-//     // $('.tml-3').textContent = 'Want to go to Tomorrowland parties but lacking a killer party crew?';
-//     // $('.tml-4').innerHtml = 'From EDM heads to techno snobs…<br>everyone can join the party!';
-//     $('.tml-5').hide();
-//     $('.tml-6').hide();
-//   }
-// });
-
-
 
 var $contactForm = $('.contact-form');
 $contactForm.submit(function(e) {
